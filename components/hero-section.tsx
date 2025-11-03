@@ -3,9 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import logo from "@/public/logo.png";
-import FloatingShapes from "./floating-shapes";
 import DecorativeCubes from "./decorative-cubes";
 import { LineShadowText } from "./ui/line-shadow-text";
 import { motion } from "framer-motion";

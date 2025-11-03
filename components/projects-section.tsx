@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Icons } from "./icons";
 import { ProjectCard } from "./project-card";
 
 interface Project {
@@ -9,7 +8,6 @@ interface Project {
 	description: string;
 	stars?: number;
 	link: string;
-	icon?: React.ReactNode;
 	imageSrc?: string;
 }
 

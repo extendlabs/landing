@@ -4,14 +4,12 @@ interface DecorativeCubesProps {
 	children?: React.ReactNode;
 	className?: string;
 	variant?: "emerald" | "purple" | "blue";
-	showGrid?: boolean;
 }
 
 export default function DecorativeCubes({
 	children,
 	className = "",
 	variant = "emerald",
-	showGrid = true,
 }: DecorativeCubesProps) {
 	const colors = {
 		emerald: {
