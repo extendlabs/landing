@@ -27,14 +27,14 @@ export default function HeroSection() {
 							<motion.span
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-								transition={{ duration: 0.5, ease: "easeOut" }}
+								transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
 							>
 								Ship
 							</motion.span>
 							<motion.span
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-								transition={{ duration: 0.5, ease: "easeOut" }}
+								transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
 							>
 								<LineShadowText className="italic" shadowColor={"white"}>
 									Faster
@@ -44,7 +44,7 @@ export default function HeroSection() {
 							<motion.span
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-								transition={{ duration: 0.5, ease: "easeOut" }}
+								transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
 							>
 								with Extend Labs
 							</motion.span>
@@ -53,9 +53,9 @@ export default function HeroSection() {
 							<motion.span
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-								transition={{ duration: 0.5, ease: "easeOut" }}
+								transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
 							>
-								Hire a experienced andtalented team of developers to build your next project.
+								Hire an experienced and talented team of developers to build your next project.
 							</motion.span>
 						</p>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
 							className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start"
 							initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 							animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-							transition={{ duration: 0.5, ease: "easeOut" }}
+							transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
 						>
 							<Button
 								asChild
@@ -92,7 +92,7 @@ export default function HeroSection() {
 						className="lg:w-1/2 flex-1 flex items-center justify-center"
 						initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 						animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-						transition={{ duration: 0.5, ease: "easeOut" }}
+						transition={{ duration: 0.5, ease: "easeOut", delay: 1.2 }}
 					>
 						<DecorativeCubes />
 					</motion.div>
