@@ -36,34 +36,38 @@ export function ProjectCard({
 				className,
 			)}
 		>
-			{/* Content Container */}
-			<div className="relative flex flex-col items-center justify-center flex-1 px-8 py-12 text-center">
-				{/* Title */}
-				<h3 className="text-xl md:text-3xl font-bold mb-4 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+			{/* Title */}
+			<div className="px-8 pt-8 pb-4">
+				<h3 className="text-xl md:text-3xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
 					{title}
 				</h3>
-
-				{/* Description */}
-				<p className="text-muted-foreground text-sm  max-w-md mb-8">{description}</p>
-
-				{/* Image */}
-				{imageSrc ? (
-					<div className="mb-8 transition-transform duration-300 group-hover:scale-110">
-						<Image
-							src={imageSrc}
-							alt={imageAlt || title}
-							width={200}
-							height={200}
-							className="object-contain"
-						/>
-					</div>
-				) : (
-					<span className="text-muted-foreground text-sm">In progress... 🚧</span>
-				)}
 			</div>
 
+			{/* Description */}
+			<div className="px-8 pb-6">
+				<p className="text-muted-foreground text-sm">{description}</p>
+			</div>
+
+			{/* Image */}
+			{imageSrc ? (
+				<div className="relative w-full h-[200px] overflow-hidden">
+					<Image
+						src={imageSrc}
+						alt={imageAlt || title}
+						fill
+						sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+						className="object-contain object-center transition-transform duration-300 group-hover:scale-105"
+						priority={false}
+					/>
+				</div>
+			) : (
+				<div className="relative w-full h-[200px] flex items-center justify-center bg-muted/20">
+					<span className="text-muted-foreground text-sm">In progress... 🚧</span>
+				</div>
+			)}
+
 			{/* Footer */}
-			<div className="relative flex items-center justify-between px-8 py-6 border-t border-border/50 bg-background/50 backdrop-blur-sm">
+			<div className="relative flex items-center justify-between px-8 py-6 border-t border-border/50 bg-background/50 backdrop-blur-sm mt-auto">
 				<div className="flex items-center gap-2">
 					{stars !== undefined && (
 						<>

@@ -17,8 +17,7 @@ const projects: Project[] = [
 	{
 		id: 1,
 		title: "Extend UI",
-		description:
-			"Enterprise-grade financial analytics platform with advanced charting and real-time market data integration.",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
 		stars: 64,
 		link: "https://github.com",
 		imageSrc: "/ui-image.png",
@@ -26,8 +25,7 @@ const projects: Project[] = [
 	{
 		id: 2,
 		title: "Animated",
-		description:
-			"Comprehensive health monitoring dashboard with real-time data visualization and patient management system.",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
 		stars: 2,
 		link: "https://github.com",
 		imageSrc: "/animated.svg",
@@ -36,8 +34,7 @@ const projects: Project[] = [
 	{
 		id: 3,
 		title: "Classcat",
-		description:
-			"Cross-platform mobile app for tracking workouts, nutrition, and progress with AI-powered recommendations.",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
 		stars: 1,
 		link: "https://github.com",
 		imageSrc: "/classcat-image.png",
@@ -45,8 +42,7 @@ const projects: Project[] = [
 	{
 		id: 4,
 		title: "Infloodie",
-		description:
-			"A modern e-commerce solution built with React Native, featuring real-time inventory management and seamless checkout experience.",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
 		stars: 1,
 		link: "https://github.com",
 	},
