@@ -30,19 +30,19 @@ const links = [
 
 export default function FooterSection() {
 	return (
-		<footer className="py-16 md:py-32">
-			<div className="mx-auto max-w-5xl px-6">
-				<Link href="/" aria-label="go home" className="mx-auto size-fit flex items-center gap-2">
+		<footer className="py-20 md:py-32 border-t border-border">
+			<div className="mx-auto max-w-7xl px-6 lg:px-8">
+				<Link href="/" aria-label="go home" className="mx-auto size-fit flex items-center gap-2 mb-12">
 					<Logo />
-					<span className="text-2xl font-semibold tracking-tighter">Extend Labs</span>
+					<span className="text-2xl font-semibold tracking-tight">Extend Labs</span>
 				</Link>
 
-				<div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+				<div className="my-8 flex flex-wrap justify-center gap-8 text-base">
 					{links.map((link, index) => (
 						<Link
 							key={index}
 							href={link.href}
-							className="text-muted-foreground hover:text-primary block duration-150"
+							className="text-muted-foreground hover:text-foreground block duration-200 transition-colors"
 						>
 							<span>{link.title}</span>
 						</Link>
@@ -175,9 +175,8 @@ export default function FooterSection() {
 						</svg>
 					</Link>
 				</div>
-				<span className="text-muted-foreground block text-center text-sm">
-					{" "}
-					© {new Date().getFullYear()} All rights reserved
+				<span className="text-muted-foreground block text-center text-sm mt-12">
+					© {new Date().getFullYear()} Extend Labs. All rights reserved.
 				</span>
 			</div>
 		</footer>

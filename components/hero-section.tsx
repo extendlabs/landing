@@ -9,31 +9,19 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
 	return (
-		<section className="min-h-dvh w-full relative flex items-center justify-center">
-			<div
-				className="absolute inset-0 z-0"
-				style={{
-					background: "radial-gradient(125% 125% at 50% 10%, #000000 40%, #072607 100%)",
-				}}
-			/>
-
-			<div className="py-12">
-				<div className="relative mx-auto flex max-w-5xl flex-col lg:flex-row px-6 gap-8 items-center">
-					<div className="mx-auto max-w-lg text-center lg:ml-0 flex-1 lg:text-left lg:w-1/2">
-						<h1 className="mt-8 max-w-2xl text-balance text-5xl font-semibold md:text-6xl lg:mt-16  leading-tightest">
+		<section className="min-h-dvh w-full relative flex items-center justify-center bg-background pt-20">
+			<div className="py-20 lg:py-32">
+				<div className="relative mx-auto flex max-w-7xl flex-col lg:flex-row px-6 lg:px-8 gap-16 items-center">
+					<div className="mx-auto w-full text-center lg:ml-0 lg:text-left lg:flex-[1.3] lg:max-w-none">
+						<h1 className="mt-8 w-full text-5xl md:text-6xl lg:text-7xl font-semibold lg:mt-0 leading-[1.1] tracking-tight">
 							<motion.span
+								className="inline-block lg:whitespace-nowrap"
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
 								transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
 							>
-								Ship
-							</motion.span>
-							<motion.span
-								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
-								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-								transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
-							>
-								<LineShadowText className="italic" shadowColor={"white"}>
+								Ship{" "}
+								<LineShadowText className="italic inline" shadowColor={"white"}>
 									Faster
 								</LineShadowText>
 							</motion.span>
@@ -46,7 +34,7 @@ export default function HeroSection() {
 								with Extend Labs
 							</motion.span>
 						</h1>
-						<p className="mt-8 max-w-2xl text-pretty text-lg text-muted-foreground">
+						<p className="mt-8 max-w-2xl text-pretty text-xl text-muted-foreground leading-relaxed">
 							<motion.span
 								initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -57,7 +45,7 @@ export default function HeroSection() {
 						</p>
 
 						<motion.div
-							className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start"
+							className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
 							initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 							animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
 							transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
@@ -65,7 +53,7 @@ export default function HeroSection() {
 							<Button
 								asChild
 								size="lg"
-								className="px-5 text-base text-white rounded-2xl"
+								className="px-8 py-6 text-base font-medium rounded-full"
 								variant="extend"
 							>
 								<Link href="#projects">
@@ -77,7 +65,7 @@ export default function HeroSection() {
 								asChild
 								size="lg"
 								variant="ghost"
-								className="px-5 text-base rounded-2xl"
+								className="px-8 py-6 text-base font-medium rounded-full"
 							>
 								<Link href="#contact">
 									<span className="text-nowrap">Book a call</span>
@@ -86,7 +74,7 @@ export default function HeroSection() {
 						</motion.div>
 					</div>
 					<motion.div
-						className="lg:w-1/2 flex-1 flex items-center justify-center"
+						className="lg:flex-1 flex items-center justify-center w-full lg:w-auto"
 						initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
 						animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
 						transition={{ duration: 0.5, ease: "easeOut", delay: 1.2 }}

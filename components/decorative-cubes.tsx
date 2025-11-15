@@ -56,8 +56,8 @@ export default function DecorativeCubes({
 
 				{/* Decorative Cube 1 - Top Right (Closer) */}
 				<div
-					className={`absolute top-6 right-6 md:top-16 md:right-16 w-10 h-10 md:w-14 md:h-14 lg:w-24 lg:h-24 border-2 ${selectedColors.cube1} rounded-lg animate-float-delayed opacity-60 bg-white/30`}
-					style={{ animationDelay: "0.5s" }}
+					className={`absolute top-6 right-6 md:top-14 md:right-18 w-10 h-10 md:w-14 md:h-14 lg:w-22 lg:h-22 border-2 ${selectedColors.cube1} rounded-lg animate-float-delayed-rotated opacity-60 bg-white/30`}
+					style={{ animationDelay: "1s" }}
 					aria-hidden="true"
 				></div>
 
@@ -71,14 +71,14 @@ export default function DecorativeCubes({
 				{/* Decorative Cube 3 - Top Left (Closer) */}
 				<div
 					className={`absolute top-6 left-6 md:top-22 md:left-22 w-10 h-10 md:w-14 md:h-14 lg:w-22 lg:h-22 border-2 ${selectedColors.cube3} rounded-lg animate-float-delayed opacity-60 backdrop-blur-sm`}
-					style={{ animationDelay: "0.3s" }}
+					style={{ animationDelay: "1s" }}
 					aria-hidden="true"
 				></div>
 
 				{/* Decorative Cube 4 - Bottom Right (Closer) */}
 				<div
 					className={`absolute bottom-6 right-6 md:bottom-22 md:right-22 w-10 h-10 md:w-14 md:h-14 lg:w-22 lg:h-22 border-2 ${selectedColors.cube4} rounded-lg animate-float-delayed opacity-60 backdrop-blur-sm`}
-					style={{ animationDelay: "0.7s" }}
+					style={{ animationDelay: "1s" }}
 					aria-hidden="true"
 				></div>
 			</div>
