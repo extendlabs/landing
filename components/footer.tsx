@@ -1,30 +1,27 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { Button } from "@/components/ui/button";
 
 const links = [
 	{
 		title: "Features",
-		href: "#",
+		href: "#projects",
 	},
 	{
-		title: "Solution",
-		href: "#",
+		title: "Projects",
+		href: "#projects",
 	},
 	{
-		title: "Customers",
-		href: "#",
+		title: "Team",
+		href: "#team",
 	},
 	{
-		title: "Pricing",
-		href: "#",
+		title: "Process",
+		href: "#process",
 	},
 	{
-		title: "Help",
-		href: "#",
-	},
-	{
-		title: "About",
-		href: "#",
+		title: "Contact",
+		href: "#contact",
 	},
 ];
 
@@ -47,6 +44,11 @@ export default function FooterSection() {
 							<span>{link.title}</span>
 						</Link>
 					))}
+				</div>
+				<div className="my-8 flex justify-center">
+					<Button asChild variant="extend" size="lg" className="rounded-full">
+						<Link href="#contact">Get Started Today</Link>
+					</Button>
 				</div>
 				<div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
 					<Link

@@ -125,6 +125,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -161,5 +164,10 @@
 
   .animate-float-delayed {
     animation: float-delayed 8s ease-in-out infinite;
+  }
+
+  .bg-grid-white\/\[0\.05\] {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   }
 }

@@ -12,6 +12,9 @@ import {
 	ChevronRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface ApplicationType {
 	id: number;
@@ -149,6 +152,18 @@ export default function ProjectsSection() {
 					solutions to scalable enterprise platforms.
 				</p>
 			</div>
+
+			<motion.div
+				className="mb-8 flex justify-center"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				viewport={{ once: true }}
+				transition={{ duration: 0.5 }}
+			>
+				<Button asChild variant="outline" size="lg" className="rounded-full">
+					<Link href="#contact">Need a Custom Solution? Let's Talk</Link>
+				</Button>
+			</motion.div>
 
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
 				{/* Left Column - Application Types List */}

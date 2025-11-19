@@ -40,7 +40,7 @@ export default function HeroSection() {
 								animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
 								transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
 							>
-								Hire an experienced and talented team of developers to build your next project.
+								Transform your ideas into powerful software solutions. We deliver cutting-edge applications that scale, perform, and drive business growth.
 							</motion.span>
 						</p>
 
@@ -56,8 +56,8 @@ export default function HeroSection() {
 								className="px-8 py-6 text-base font-medium rounded-full"
 								variant="extend"
 							>
-								<Link href="#projects">
-									<span className="text-nowrap">Our work</span>
+								<Link href="#contact">
+									<span className="text-nowrap">Start Your Project</span>
 								</Link>
 							</Button>
 							<Button
@@ -67,8 +67,8 @@ export default function HeroSection() {
 								variant="ghost"
 								className="px-8 py-6 text-base font-medium rounded-full"
 							>
-								<Link href="#contact">
-									<span className="text-nowrap">Book a call</span>
+								<Link href="#projects">
+									<span className="text-nowrap">View Our Work</span>
 								</Link>
 							</Button>
 						</motion.div>
