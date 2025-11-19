@@ -53,10 +53,10 @@ export default function ContactSection() {
 						Get Started
 					</span>
 					<h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 mt-4 tracking-tight">
-						Let's Build Something Amazing
+						Let&apos;s Build Something Amazing
 					</h2>
 					<p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-						Ready to accelerate your project? Get in touch and let's discuss how we can help bring your vision to life.
+						Ready to accelerate your project? Get in touch and let&apos;s discuss how we can help bring your vision to life.
 					</p>
 				</motion.div>
 
@@ -72,7 +72,7 @@ export default function ContactSection() {
 							<CheckCircle2 className="h-16 w-16 text-primary mx-auto mb-4" />
 							<h3 className="text-2xl font-semibold mb-2">Thank you!</h3>
 							<p className="text-muted-foreground">
-								We've received your message and will get back to you within 24 hours.
+								We&apos;ve received your message and will get back to you within 24 hours.
 							</p>
 						</div>
 					) : (

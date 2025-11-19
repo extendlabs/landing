@@ -161,7 +161,7 @@ export default function ProjectsSection() {
 				transition={{ duration: 0.5 }}
 			>
 				<Button asChild variant="outline" size="lg" className="rounded-full">
-					<Link href="#contact">Need a Custom Solution? Let's Talk</Link>
+					<Link href="#contact">Need a Custom Solution? Let&apos;s Talk</Link>
 				</Button>
 			</motion.div>
 

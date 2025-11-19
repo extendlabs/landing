@@ -1,6 +1,5 @@
 import HeroSection from "@/components/hero-section";
 import StatsSection from "@/components/stats-section";
-import TrustBadgesSection from "@/components/trust-badges-section";
 import ProjectsSection from "@/components/projects-section";
 import ProcessSection from "@/components/process-section";
 import TestimonialsSection from "@/components/testimonials-section";

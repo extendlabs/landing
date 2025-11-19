@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
 						What Our Clients Say
 					</h2>
 					<p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-						Don't just take our word for it. Here's what our clients have to say about working with us.
+						Don&apos;t just take our word for it. Here&apos;s what our clients have to say about working with us.
 					</p>
 				</motion.div>
 
@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
 								<Quote className="h-8 w-8" />
 							</div>
 							<p className="text-muted-foreground leading-relaxed mb-6 relative z-10">
-								"{testimonial.content}"
+								&quot;{testimonial.content}&quot;
 							</p>
 							<div className="flex items-center gap-4">
 								<Avatar className="size-12 border border-border">

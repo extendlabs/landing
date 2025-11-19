@@ -23,7 +23,7 @@ export default function CTABanner() {
 							Ready to Build Your Next Project?
 						</h2>
 						<p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-							Let's discuss how we can help bring your vision to life. Get a free consultation and project estimate today.
+							Let&apos;s discuss how we can help bring your vision to life. Get a free consultation and project estimate today.
 						</p>
 						<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 							<Button asChild size="lg" variant="extend" className="px-8 py-6 text-base font-medium rounded-full">

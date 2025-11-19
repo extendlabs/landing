@@ -54,7 +54,7 @@ export default function FloatingCTA() {
 								</div>
 								<div>
 									<h4 className="font-semibold text-sm">Need Help?</h4>
-									<p className="text-xs text-muted-foreground">Let's discuss your project</p>
+									<p className="text-xs text-muted-foreground">Let&apos;s discuss your project</p>
 								</div>
 							</div>
 							<Button asChild size="sm" variant="extend" className="w-full rounded-full">
