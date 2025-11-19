@@ -27,9 +27,13 @@ const links = [
 
 export default function FooterSection() {
 	return (
-		<footer className="py-20 md:py-32 border-t border-border">
+		<footer className="py-20 md:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
-				<Link href="/" aria-label="go home" className="mx-auto size-fit flex items-center gap-2 mb-12">
+				<Link
+					href="/"
+					aria-label="go home"
+					className="mx-auto size-fit flex items-center gap-2 mb-12"
+				>
 					<Logo />
 					<span className="text-2xl font-semibold tracking-tight">Extend Labs</span>
 				</Link>
