@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion, MotionProps } from "motion/react"
+import { motion, MotionProps } from "motion/react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 interface LineShadowTextProps
   extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,
     MotionProps {
-  shadowColor?: string
-  as?: React.ElementType
+  shadowColor?: string;
+  as?: React.ElementType;
 }
 
 export function LineShadowText({
@@ -18,11 +18,11 @@ export function LineShadowText({
   as: Component = "span",
   ...props
 }: LineShadowTextProps) {
-  const MotionComponent = motion.create(Component)
-  const content = typeof children === "string" ? children : null
+  const MotionComponent = motion.create(Component);
+  const content = typeof children === "string" ? children : null;
 
   if (!content) {
-    throw new Error("LineShadowText only accepts string content")
+    throw new Error("LineShadowText only accepts string content");
   }
 
   return (
@@ -41,5 +41,5 @@ export function LineShadowText({
     >
       {content}
     </MotionComponent>
-  )
+  );
 }
