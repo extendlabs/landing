@@ -5,7 +5,7 @@ import React from "react";
 export default function TrustedSection() {
   return (
     <section className="w-full py-12 lg:py-16 border-y border-border bg-muted/20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm md:text-base font-medium text-muted-foreground">
             Trusted by{" "}

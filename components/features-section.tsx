@@ -96,8 +96,10 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="relative w-full bg-black overflow-hidden">
-      <IsometricGrid items={features} />
+    <section className="relative w-full bg-black overflow-hidden py-32 lg:py-40">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <IsometricGrid items={features} />
+      </div>
     </section>
   );
 }

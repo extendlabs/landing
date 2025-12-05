@@ -56,7 +56,7 @@ export default function ProcessSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 lg:px-8">
         {processSteps.map((step, index) => {
           const Icon = step.icon;
           return (

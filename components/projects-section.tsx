@@ -86,7 +86,7 @@ export default function ProjectsSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 px-6 lg:px-8">
         {/* Left Column - Application Types List */}
         <div className="flex flex-col">
           <div className="flex-1 rounded-xl border border-border bg-card overflow-hidden">

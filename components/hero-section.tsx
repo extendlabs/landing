@@ -10,8 +10,16 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="min-h-dvh w-full relative flex items-center justify-center bg-background pt-20">
-      <div className="py-20 lg:py-32">
-        <div className="relative mx-auto flex max-w-7xl flex-col lg:flex-row px-6 lg:px-8 gap-16 items-center">
+      <div className="pb-20 lg:py-32">
+        <div className="relative mx-auto flex max-w-7xl flex-col lg:flex-row px-6 lg:px-8 lg:gap-16 items-center w-full">
+          <motion.div
+            className="lg:flex-1 flex items-center justify-center w-full mx-auto md:hidden"
+            initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
+            animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
+          >
+            <DecorativeCubes />
+          </motion.div>
           <div className="mx-auto w-full text-center lg:ml-0 lg:text-left lg:flex-[1.3] lg:max-w-none">
             <h1 className="mt-8 w-full text-5xl md:text-6xl lg:text-7xl font-semibold lg:mt-0 leading-[1.1] tracking-tight">
               <motion.span
@@ -75,7 +83,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
           <motion.div
-            className="lg:flex-1 flex items-center justify-center w-full lg:w-auto"
+            className="lg:flex-1 items-center justify-center w-full lg:w-auto hidden lg:block"
             initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
             animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 1.2 }}
