@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
 							<div className="absolute top-6 right-6 text-primary/20">
 								<Quote className="h-8 w-8" />
 							</div>
-							<p className="text-muted-foreground leading-relaxed mb-6 relative z-10">
+							<p className="text-muted-foreground leading-relaxed mb-6 relative z-10 max-w-[270px]">
 								&quot;{testimonial.content}&quot;
 							</p>
 							<div className="flex items-center gap-4">

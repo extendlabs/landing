@@ -17,8 +17,8 @@ export default function Home() {
 			{/* <TrustBadgesSection /> */}
 			<ProjectsSection />
 			<ProcessSection />
-			<TestimonialsSection />
-			<TeamSection />
+			{/* <TestimonialsSection /> */}
+			{/* <TeamSection /> */}
 			<CTABanner />
 			<ContactSection />
 			<Footer />
