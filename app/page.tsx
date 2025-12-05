@@ -10,19 +10,19 @@ import Footer from "@/components/footer";
 import FloatingCTA from "@/components/floating-cta";
 
 export default function Home() {
-	return (
-		<main className="font-sans items-center justify-items-center min-h-screen">
-			<HeroSection />
-			<StatsSection />
-			{/* <TrustBadgesSection /> */}
-			<ProjectsSection />
-			<ProcessSection />
-			{/* <TestimonialsSection /> */}
-			{/* <TeamSection /> */}
-			<CTABanner />
-			<ContactSection />
-			<Footer />
-			<FloatingCTA />
-		</main>
-	);
+  return (
+    <main className="font-sans items-center justify-items-center min-h-screen">
+      <HeroSection />
+      <StatsSection />
+      {/* <TrustBadgesSection /> */}
+      <ProjectsSection />
+      <ProcessSection />
+      {/* <TestimonialsSection /> */}
+      {/* <TeamSection /> */}
+      <CTABanner />
+      <ContactSection />
+      <Footer />
+      <FloatingCTA />
+    </main>
+  );
 }
