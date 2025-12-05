@@ -14,8 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Extend Labs",
-  description: "Extend Labs",
+	title: "Extend Labs - Software Development Agency | Build Faster, Ship Better",
+	description:
+		"Transform your ideas into powerful software solutions. Expert developers specializing in AI applications, web platforms, mobile apps, and enterprise solutions. 50+ projects delivered, 99% on-time delivery.",
+	keywords: [
+		"software development",
+		"web development",
+		"mobile app development",
+		"AI development",
+		"software house",
+		"custom software",
+		"full-stack development",
+		"React development",
+		"Python development",
+	],
+	openGraph: {
+		title: "Extend Labs - Software Development Agency",
+		description: "Transform your ideas into powerful software solutions. Expert developers ready to build your next project.",
+		type: "website",
+	},
 };
 
 export default function RootLayout({
