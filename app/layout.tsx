@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://extendlabs.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://extend-labs.com"
   ),
   title: {
     default:
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://extendlabs.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://extend-labs.com";
 
 const jsonLd = {
   "@context": "https://schema.org",
