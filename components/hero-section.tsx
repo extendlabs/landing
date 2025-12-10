@@ -12,14 +12,6 @@ export default function HeroSection() {
     <section className="min-h-dvh w-full relative flex items-center justify-center bg-background pt-20">
       <div className="pb-20 lg:py-32">
         <div className="relative mx-auto flex max-w-7xl flex-col lg:flex-row px-6 lg:px-8 lg:gap-16 items-center w-full">
-          <motion.div
-            className="lg:flex-1 flex items-center justify-center w-full mx-auto md:hidden"
-            initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
-            animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
-          >
-            <DecorativeCubes />
-          </motion.div>
           <div className="mx-auto w-full text-center lg:ml-0 lg:text-left lg:flex-[1.3] lg:max-w-none">
             <h1 className="mt-8 w-full text-5xl md:text-6xl lg:text-7xl font-semibold lg:mt-0 leading-[1.1] tracking-tight">
               <motion.span
@@ -54,7 +46,16 @@ export default function HeroSection() {
             </p>
 
             <motion.div
-              className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
+              className="lg:flex-1 flex items-center justify-center w-full mx-auto md:hidden mt-6"
+              initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
+              animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
+            >
+              <DecorativeCubes />
+            </motion.div>
+
+            <motion.div
+              className="mt-6 md:mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
               initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
               animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}

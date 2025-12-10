@@ -66,13 +66,13 @@ export default function ProcessSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.45 }}
             >
-              <div className="relative rounded-2xl border border-border bg-card p-8 h-full hover:border-primary/30 transition-all duration-300">
+              <div className="group relative rounded-2xl border border-border bg-card p-8 h-full hover:border-primary/30 transition-all duration-300">
                 <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-6">
                   <Icon className="h-7 w-7" />
                 </div>
-                <div className="absolute top-8 right-8 text-6xl font-bold text-muted-foreground/10">
+                <div className="absolute top-8 right-8 text-6xl font-bold text-muted-foreground/10 group-hover:text-primary/20 transition-colors duration-300">
                   {String(index + 1).padStart(2, "0")}
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">

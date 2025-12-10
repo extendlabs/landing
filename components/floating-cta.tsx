@@ -60,7 +60,7 @@ export default function FloatingCTA() {
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full mt-2">
               <Button
                 asChild
                 size="sm"
